@@ -42,6 +42,7 @@ const Header = () => {
       className={`w-full h-[50px] md:h-[80px] bg-white flex items-center justify-between sticky top-0 transition-transform duration-300 ${show} z-10`}
     >
       <Wrapper className="h-[60px] flex items-center justify-between ">
+      
         <Link href="/">
           <img src="/logo.svg" className="w-[40px]" />
         </Link>
@@ -53,7 +54,6 @@ const Header = () => {
             setMobileMenu={setMobileMenu}
           />
         )}
-
         <div className="flex items-center gap-2 text-black">
           {/* icon start */}
           <div className="w-8 md:w-12 h-8 md:h-12 rounded-full flex justify-center items-center hover:bg-black/[0.05] cursor-pointer relative">

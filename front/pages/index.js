@@ -16,6 +16,7 @@ export default function Home() {
             A lightweight Nike ZoomX midsole is combined with increased stack
             heights to help provide cushioning during extended stretches of
             running.
+               
           </div>
         </div>
         {/* heading and paragraph end */}
