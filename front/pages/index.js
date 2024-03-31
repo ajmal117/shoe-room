@@ -1,8 +1,20 @@
 import HeroBanner from "@/components/HeroBanner";
 import ProductCard from "@/components/ProductCard";
 import Wrapper from "@/components/Wrapper";
+import { fetchDataFromApi } from "@/utils/api";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    fetchProduct;
+  }, []);
+
+  const fetchProduct = async () => {
+    const { data } = fetchDataFromApi("/api/products");
+    setData(data);
+  };
+
   return (
     <main className="">
       <HeroBanner />
@@ -16,7 +28,6 @@ export default function Home() {
             A lightweight Nike ZoomX midsole is combined with increased stack
             heights to help provide cushioning during extended stretches of
             running.
-               
           </div>
         </div>
         {/* heading and paragraph end */}
