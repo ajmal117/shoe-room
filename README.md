@@ -1,3 +1,6 @@
+to start -
+frontend - npm run dev
+backend - npm run develop
 
 Backend :
 run backend - npm run develop
