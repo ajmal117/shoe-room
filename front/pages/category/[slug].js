@@ -4,6 +4,7 @@ import { fetchDataFromApi } from "@/utils/api";
 import React from "react";
 
 const Category = ({ category, products, slug }) => {
+  console.log(products);
   return (
     <div className="w-full md:py-20">
       <Wrapper>
@@ -58,7 +59,7 @@ export async function getStaticProps({ params: { slug } }) {
     `/api/categories?filters[slug][$eq]=${slug}`
   );
   const products = await fetchDataFromApi(
-    `/api/products?populates=*&[filters][categories][slug][$eq]=${slug}`
+    `/api/products?populate=*&[filters][categories][slug][$eq]=${slug}`
   );
 
   return {
