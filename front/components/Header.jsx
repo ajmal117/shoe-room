@@ -27,7 +27,6 @@ const Header = () => {
     } else {
       setShow("translate-y-0");
     }
-
     setLastScrollY(window.scrollY);
   };
 
